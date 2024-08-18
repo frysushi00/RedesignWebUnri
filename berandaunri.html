@@ -1,0 +1,1766 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UNIVERSITAS-RIAU</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.css">
+    <link rel="stylesheet" href="asset/swiper-bundle.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <!-- Custom CSS -->
+    <style>
+        * {
+            margin:
+                0;
+            padding:
+                0;
+            box-sizing:
+                border-box;
+            font-family:
+                "Poppins",
+                sans-serif;
+        }
+
+        body {
+            font-family:
+                "Poppins",
+                sans-serif;
+            background-color:
+                #fff;
+            color:
+                #000;
+        }
+
+        .green-bg {
+            background-color:
+                #0C9447;
+        }
+
+        .yellow-bg {
+            background-color:
+                #F7EE24;
+        }
+
+
+
+        .navbar {
+            background-color:
+                #0C9447;
+        }
+
+        .navbar .navbar-nav .nav-link {
+            color:
+                #fff;
+        }
+
+        .navbar .navbar-nav .nav-link:hover {
+            color:
+                #F7EE24;
+        }
+
+        .footer {
+            background-color:
+                #000;
+            color:
+                #fff;
+        }
+
+        .card-img-top {
+            width:
+                100%;
+            height:
+                auto;
+            border-radius:
+                12px;
+        }
+
+        .video-container {
+            position:
+                relative;
+            padding-bottom:
+                56.25%;
+            padding-top:
+                0;
+            height:
+                0;
+        }
+
+        #background-video {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            max-height: 100%;
+        }
+
+        .logo-overlay {
+            position:
+                absolute;
+            top:
+                50%;
+            left:
+                50%;
+            transform:
+                translate(-50%,
+                    -50%);
+            z-index:
+                1;
+        }
+
+        .cross-image {
+            text-align:
+                center;
+        }
+
+        .full-width-container {
+            margin-left:
+                -15px;
+            margin-right:
+                -15px;
+        }
+
+        .cross-image img {
+            width:
+                50%;
+        }
+
+        .yellow-box,
+        .green-box {
+            background-color:
+                #F7EE24;
+            padding:
+                20px;
+            text-align:
+                center;
+            border-radius:
+                5px;
+        }
+
+        .green-box {
+            background-color:
+                #0C9447;
+        }
+
+        .yellow-box p,
+        .green-box p {
+            margin:
+                0;
+        }
+
+        .numbers {
+            margin-top:
+                50px;
+        }
+
+        .rect {
+            margin:
+                10px;
+            padding:
+                20px;
+            background-color:
+                #0C9447;
+            color:
+                #fff;
+            border-radius:
+                10px;
+            text-align:
+                center;
+            width:
+                200px;
+        }
+
+        .fa-graduation-cap,
+        .fa-user-plus,
+        .fa-user-circle,
+        .fa-book,
+        .fa-users,
+        .fa-building {
+            font-size:
+                60px !important;
+            width:
+                60px !important;
+        }
+
+        .btn-black {
+            border-width:
+                2px;
+            border-radius:
+                20px;
+            color:
+                white;
+            background-color:
+                #000;
+            border:
+                solid #000;
+        }
+
+        .btn-white {
+            border-width:
+                2px;
+            border-radius:
+                20px;
+            color:
+                #000;
+            background-color:
+                #fff;
+            border:
+                solid #fff;
+        }
+
+        .btn-white:hover {
+            border-width:
+                2px;
+            border-radius:
+                20px;
+            border-color:
+                #fff;
+            color:
+                #fff;
+            background-color:
+                #ffffff00;
+            border:
+                solid #fff;
+        }
+
+        .btn-yellow {
+            border-width:
+                2px;
+            border-radius:
+                20px;
+            color:
+                #000;
+            background-color:
+                #F7EE24;
+            border:
+                solid #F7EE24;
+        }
+
+        .btn-yellow:hover {
+            border-width:
+                2px;
+            border-radius:
+                20px;
+            border-color:
+                #F7EE24;
+            color:
+                #F7EE24;
+            background-color:
+                #ffffff00;
+            border:
+                solid #F7EE24;
+        }
+
+        .btn-green {
+            border-width:
+                2px;
+            border-radius:
+                20px;
+            color:
+                #fff;
+            background-color:
+                #0C9447;
+            border:
+                solid #0C9447;
+        }
+
+        .btn-green:hover {
+            border-width:
+                2px;
+            border-radius:
+                20px;
+            border-color:
+                #0C9447;
+            color:
+                #0C9447;
+            background-color:
+                #ffffff00;
+            border:
+                solid #0C9447;
+        }
+
+        .btn-black:hover {
+            border-width:
+                2px;
+            border-radius:
+                20px;
+            border-color:
+                #000;
+            color:
+                #000;
+            background-color:
+                #ffffff00;
+            border:
+                solid #000;
+        }
+
+        @keyframes pulse {
+            from {
+                transform:
+                    scale(1);
+            }
+
+            to {
+                transform:
+                    scale(1.1);
+            }
+        }
+
+        .link-black {
+            color:
+                #000;
+        }
+
+        .link-black:hover {
+            color:
+                #0C9447;
+            text-decoration: none;
+        }
+
+        .fixed-top {
+            padding:
+                20px 0 20px 8px;
+        }
+
+        .fixed-top:scroll {
+            top:
+                0;
+        }
+
+        .fixed-top .navbar-nav li a {
+            font-size:
+                14px;
+            color:
+                white;
+            transition:
+                .5s ease-in-out;
+        }
+
+        #main-bar {
+            position:
+                fixed;
+            width:
+                100%;
+            z-index:
+                999;
+        }
+
+        #main-bar .nav-item {
+            margin-left:
+                10px;
+            font-size:
+                16px;
+        }
+
+
+
+        .navbar.navbar-expand-md.bg-dark {
+            margin-top:
+                90px;
+        }
+
+        .big-news {
+            margin-bottom:
+                20px;
+        }
+
+        .small-news {
+            margin-bottom:
+                10px;
+        }
+
+        .side-line {
+            flex-grow: 1;
+            height: 2px;
+            background-color: #0C9447;
+            margin-left: 10px;
+        }
+
+        .side-line2 {
+            flex-grow: 1;
+            height: 2px;
+            background-color: #0C9447;
+            margin-right: 10px;
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            justify-content: center;
+            height: 100vh;
+        }
+
+        .card__container {
+            padding-block: 5rem;
+        }
+
+        .card__content {
+            margin-inline: 1.75rem;
+            border-radius: 1.25rem;
+            overflow: hidden;
+        }
+
+        .card__article {
+            width: 300px;
+            border-radius: 1.25rem;
+            overflow: hidden;
+        }
+
+        .card__image {
+            position: relative;
+            padding-top: 1.5rem;
+            margin-bottom: -.75rem;
+        }
+
+        .card__data {
+            background-color: #000;
+            color: #FFF;
+            padding: 1.5rem 2rem;
+            border-radius: 1rem;
+            text-align: center;
+            position: relative;
+            z-index: 10;
+        }
+
+        .card__img {
+            width: 100%;
+            margin: 0 auto;
+            position: relative;
+            z-index: 5;
+            border-radius: 10px 10px 0 0;
+            border: 1px solid #000;
+        }
+
+        .card__name {
+            font-weight: bold;
+            font-size: larger;
+            color: #F7EE24;
+            margin-bottom: .75rem;
+        }
+
+        .card__description {
+            font-size: smaller;
+            font-weight: 300;
+            margin-bottom: 1.75rem;
+        }
+
+        .card__button {
+            display: inline-block;
+            background-color: #F7EE24;
+            color: #000;
+            padding: .75rem 1.5rem;
+            border-radius: .25rem;
+            font-weight: bolder;
+        }
+
+        .card__button:hover {
+            color: #0C9447;
+            text-decoration: none;
+        }
+
+
+
+        .swiper-button-prev::after,
+        .swiper-button-next::after {
+            content: '';
+        }
+
+        .swiper-button-next,
+        .swiper-button-prev {
+            width: initial;
+            height: initial;
+            font-size: 3rem;
+            color: #0C9447 !important;
+            display: none;
+            filter: drop-shadow(2px);
+        }
+
+        .swiper-button-prev {
+            left: 0;
+        }
+
+        .swiper-button-next {
+            right: 0;
+        }
+
+        .swiper-pagination-bullet {
+            background-color: hsl(214, 3%, 59%);
+            opacity: 1;
+        }
+
+        .swiper-pagination-bullet-active {
+            background-color: #0C9447;
+        }
+
+
+        @media screen and (max-width: 320px) {
+            .card__data {
+                padding: 1rem;
+            }
+        }
+
+        @media screen and (min-width: 768px) {
+            .card__content {
+                margin-inline: 3rem;
+            }
+
+            .swiper-button-next,
+            .swiper-button-prev {
+                display: block;
+            }
+        }
+
+        @media screen and (min-width: 1120px) {
+            .card__container {
+                max-width: 1120px;
+            }
+
+            .swiper-button-next {
+                right: -1rem;
+            }
+
+            .swiper-button-prev {
+                left: -1rem;
+            }
+        }
+
+        @media screen and (max-width:767px) {
+            .navbar-dark {
+                background-color:
+                    #0C9447;
+            }
+
+            .navbar-nav.ml-auto {
+                margin-left:
+                    auto !important;
+            }
+
+            .navbar.navbar-expand-md.bg-dark .navbar-nav {
+                display:
+                    flex;
+                flex-direction:
+                    row !important;
+                justify-content:
+                    flex-end;
+                align-items:
+                    center;
+            }
+
+            .navbar.navbar-expand-md.bg-dark .navbar-nav .nav-item {
+                margin-right:
+                    10px;
+            }
+
+            .navbar.navbar-expand-md.bg-dark .navbar-nav .nav-item:last-child {
+                margin-right:
+                    0;
+            }
+
+            .navbar.navbar-expand-md.bg-dark .navbar-nav .nav-link {
+                color:
+                    white;
+                font-size:
+                    14px;
+            }
+
+            @media (max-width: 300px) {
+                .container-fluid.penjelasan .row .col-md-6 img {
+                    width: calc(100% - 100px);
+                    max-width: none;
+                    margin-left: 50px;
+                    margin-right: 50px;
+                    margin-top: 20px;
+                    margin-bottom: 20px;
+                    box-shadow: 20px 20px rgb(0, 0, 0);
+                }
+            }
+
+            @media (max-width: 670px) {
+                .container-fluid.penjelasan .row .col-md-6 img {
+                    width: calc(100% - 100px);
+                    max-width: none;
+                    margin-left: 50px;
+                    margin-right: 50px;
+                    margin-top: 20px;
+                    margin-bottom: 20px;
+                    box-shadow: 20px 20px rgb(0, 0, 0);
+                }
+            }
+        }
+
+        @media (max-width: 768px) {
+            .numbers .rect {
+                top: auto;
+                bottom: 10px;
+                transform: none;
+            }
+        }
+
+        @media (max-width: 767px) {
+            .form-control {
+                width: 100% !important;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .logo-overlay img {
+                width: 200px;
+            }
+        }
+
+        @media (max-width: 576px) {
+            .logo-overlay img {
+                width: 100px;
+            }
+        }
+
+        @media (min-width: 300px) {
+            .logo-overlay img {
+                width: 80px;
+            }
+        }
+
+        .dropdown-menu .dropdown-item:hover {
+            color: #000;
+            background-color: #fff;
+        }
+
+        .responsive-navbar .navbar-nav {
+            display: flex;
+            justify-content: space-around;
+            margin: 0;
+            padding: 0;
+            list-style-type: none;
+        }
+
+        .responsive-navbar .nav-item {
+            font-size: 14px;
+            margin-right: 15px;
+        }
+
+        @media screen and (max-width: 700px) {
+            .responsive-navbar .navbar-nav {
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+
+            .responsive-navbar .nav-item {
+                flex: 1 0 50%;
+                text-align: center;
+                margin-right: 0;
+                font-size: 8%;
+            }
+        }
+
+        @media screen and (min-width: 300px) {
+            .responsive-navbar .navbar-nav {
+                justify-content: center;
+                margin-top: 0px;
+            }
+
+            .responsive-navbar .nav-item {
+                flex: 1 0 auto;
+                text-align: center;
+                margin-right: 15px;
+            }
+        }
+
+        .program-section {
+            padding: 50px;
+            width: 100%;
+            background-color: #000;
+        }
+
+        .program-section h2 {
+            font-weight: bold;
+            color: #fff;
+            margin-bottom: 10px;
+            text-align: center;
+        }
+
+
+
+        /* .blockquote {
+            text-align: center;
+            margin-bottom: 10px;
+            font-size: 16px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .card {
+            border-radius: 20px;
+            height: 100%;
+        }
+
+        .card-body {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            text-align: center;
+            height: 100%;
+        }
+
+        .card-body i {
+            margin-bottom: 10px;
+            margin-top: 10px;
+            font-size: 60px;
+        } */
+
+
+        @media screen and (max-width: 768px) {
+            .program-section .container-fluid {
+                padding: 0 !important;
+            }
+
+            .program-section .card {
+                margin-bottom: 0 auto 20px;
+                height: auto !important;
+            }
+
+            .program-section .side-line {
+                margin-left: auto;
+                margin-right: auto;
+            }
+
+            .program-section .blockquote {
+                font-size: 14px;
+            }
+
+            .program-section .card-body h3 {
+                font-size: 20px;
+            }
+
+            .program-section .card-body p {
+                font-size: 14px;
+            }
+
+            .program-section .btn {
+                margin: 0 auto;
+            }
+        }
+
+        @media screen and (min-width: 300px) {
+            .program-section .card {
+                margin: 0 auto 20px !important;
+                margin-left: 0;
+                padding-right: 0;
+            }
+
+            .program-section .card-body {
+                margin: 0 auto 20px;
+            }
+
+            .program-section .blockquote h4 {
+                font-size: 18px !important;
+                margin-left: auto;
+                margin-right: auto;
+                text-align: center;
+            }
+
+            .program-section .card-body h3 {
+                font-size: 16px;
+            }
+
+            .program-section .card-body p {
+                font-size: 12px;
+            }
+        }
+
+        @media screen and (min-width: 300px) {
+            .penjelasan-section .col-md-6 p {
+                font-size: 14px;
+            }
+
+            .penjelasan-section .col-md-6 btn {
+                font-size: 14px;
+            }
+
+            .penjelasan-section .col-md-6 .link-black {
+                font-size: 14px;
+            }
+
+            .penjelasan-section .col-md-6 h2 {
+                font-size: 20px;
+
+                .navbar navbar-expand-lg navbar-dark fixed-top img {
+                    width: 20px;
+                }
+            }
+        }
+
+        @media screen and (min-width: 768px) {
+            .navbar img {
+                width: 100% !important;
+            }
+        }
+
+        @media screen and (max-width: 300px) {
+            .navbar img {
+                max-width: 95% !important;
+                max-height: 25px;
+                height: auto;
+            }
+
+            .navbar.navbar-expand-md.bg-dark {
+                margin-top:
+                    75px;
+            }
+        }
+
+        @media screen and (min-width: 300px) {
+            .navbar img {
+                max-width: 95% !important;
+                max-height: 25px;
+                height: auto;
+            }
+
+            .navbar.navbar-expand-md.bg-dark {
+                margin-top:
+                    75px;
+            }
+        }
+
+        .small-news:hover img,
+        .big-news:hover img {
+            filter: brightness(70%) saturate(150%);
+        }
+
+        .small-news img:hover::before,
+        .big-news img:hover::before {
+            content: "";
+            background-color: rgba(206, 225, 2, 0.681);
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 1;
+        }
+
+        .image-with-gradient {
+            position: relative;
+            overflow: hidden;
+            width: 100%;
+            max-width: 500px;
+            border: 2px solid #000000;
+        }
+
+        .image-with-gradient::after {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(rgba(194, 221, 15, 0), rgba(0, 0, 0, 0.973));
+            pointer-events: none;
+        }
+
+        .dropdown-menu {
+            position: absolute;
+            top: 100%;
+            left: 0%;
+            display: none;
+            float: left;
+            min-width: 10rem;
+            padding: 0.5rem 0;
+            margin: 0.125rem 0 0;
+            font-size: 1rem;
+            color: #000;
+            text-align: left;
+            list-style: none;
+            background-color: #000;
+            background-clip: padding-box;
+            border: 1px solid rgba(0, 0, 0, 0.15);
+        }
+
+        .dropdown-menu.show {
+            display: block;
+        }
+
+        .dropdown-item {
+            display: block;
+            width: 100%;
+            padding: 0.25rem 1.5rem;
+            clear: both;
+            font-weight: 400;
+            color: #212529;
+            text-align: inherit;
+            white-space: nowrap;
+            background-color: transparent;
+            border: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-md bg-dark responsive-navbar" style="width: 100%;">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a href="#" class="nav-link" style="font-size: 14px;">Portal</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link" style="font-size: 14px;">Kalender Akademik</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link" style="font-size: 14px;">Webmail</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link" style="font-size: 14px;">Blog Staff</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link" style="font-size: 14px;">Dokumen</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link" style="font-size: 14px;">Prestasi</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link" style="font-size: 14px;">PPID</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link" style="font-size: 14px;">PKKMB</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link" style="font-size: 14px;">English</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Content Section -->
+
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top"
+        style="background-color: #000; padding: 20px; width: 100%;">
+        <a href="#" class="navbar-brand"><img src="asset/logo-unri21-Blu-1.png"
+                style="height: 40px; min-height: 20px;width: auto; max-width: 100%;"></a>
+        <button class="navbar-toggler custom-toggler" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a href="#" class="nav-link"
+                        style="border-bottom: 3px solid #F7EE24; font-weight: bold; font-size: 14px;">BERANDA</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                        aria-expanded="false" style="font-weight: 500; font-size: 14px;">
+                        TENTANG UNRI
+                    </a>
+                    <ul class="dropdown-menu" style="background-color: #000; color: #FFF;">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                            aria-expanded="false">
+                            ORGANISASI
+                        </a>
+                        <ul class="dropdown-menu2" aria-labelledby="navbarDropdownMenuLink" id="organisasiDropdown"
+                            style="list-style-type: none; list-style: none;">
+                            <li><a class="dropdown-item" href="#" style="color: #0C9447;">Dewan Pengawas</a></li>
+                            <li><a class="dropdown-item" href="#" style="color: #0C9447;">Senat Akademik</a></li>
+                        </ul>
+                        <li><a class="dropdown-item" href="#">SEKILAS UNRI</a></li>
+                        <li><a class="dropdown-item" href="#">VISI, MISI, DAN TUGAS</a></li>
+                    </ul>
+
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                        aria-expanded="false" style="font-weight: 500; font-size: 14px;">
+                        PENDIDIKAN
+                    </a>
+                    <ul class="dropdown-menu" style="background-color: #000; color: #FFF;">
+                        <li><a class="dropdown-item" href="#">FAKULTAS</a></li>
+                        <li><a class="dropdown-item" href="#">PROGRAM PENDIDIKAN</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link" style="font-weight: 500; font-size: 14px;">PENELITIAN</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link" style="font-weight: 500; font-size: 14px;">MAHASISWA</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link" style="font-weight: 500; font-size: 14px;">INTERNATIONAL</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                        aria-expanded="false" style="font-weight: 500; font-size: 14px;">
+                        SISTEM INFORMASI
+                    </a>
+                    <ul class="dropdown-menu" style="background-color: #000; color: #FFF;">
+                        <li><a class="dropdown-item" href="#">PENERIMAAN MAHASISWA BARU</a></li>
+                        <li><a class="dropdown-item" href="#">SISTEM INFORMASI AKADEMIK</a></li>
+                        <li><a class="dropdown-item" href="#">LAYANAN IT</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link" style="font-weight: 500; font-size: 14px;">PENDAFTARAN</a>
+                </li>
+            </ul>
+            <form class="d-flex" role="search">
+                <input class="form-control me-5" type="search" placeholder='Cari' aria-label="Search"
+                    style="border-radius: 20px; width: 100%;">
+                <button class="btn btn-outline-light" type="submit" style="margin-left: 8px; border-radius: 20px;"><i
+                        class="fas fa-search"></i></button>
+            </form>
+        </div>
+    </nav>
+
+    <!-- Video dan Logo -->
+    <div class="video-container">
+        <video id="background-video" loop preload="auto" autoplay muted>
+            <source src="https://unri.ac.id/wp-content/uploads/2023/06/y2mate.com-SLIDESHOW-UNRI-2023_1080p.mp4"
+                type="video/mp4">
+        </video>
+        <div class="logo-overlay" style="display: flex; justify-content: center;">
+            <img src="asset/logo-ur-2.png" alt="" style="width: 80%; min-width: 30px;">
+        </div>
+    </div>
+
+    <!-- COUNTER -->
+    <section class="counterur-section">
+        <div class="container-fluid text-center" style="margin-bottom: 0; margin-top: 30px; ">
+            <div class="container-fluid"
+                style="display: flex; align-items: center; width: 100%; padding: 0; margin: 0;">
+                <div class="side-line2"></div>
+                <h2 class="text-left" style="font-weight: bold; color: #000; margin-bottom: 10px; text-align: center;">
+                    UNRI
+                    DALAM ANGKA</h2>
+                <div class="side-line"></div>
+            </div>
+            <div class="row">
+                <div class="col-md-4 d-flex justify-content-center">
+                    <div class="rect">
+                    <i class=" fa fa-user-plus" aria-hidden="true"
+                        style="color: #F7EE24; margin-bottom: 10px; margin-top: 10px;"></i>
+                        <h1 class="count">107</h1>
+                        <h2>-</h2>
+                        <p>GURU BESAR</p>
+                    </div>
+                </div>
+                <div class="col-md-4 d-flex justify-content-center">
+                    <div class="rect">
+                        <i class="fa fa-building" aria-hidden="true"
+                            style="color: #F7EE24; margin-bottom: 10px; margin-top: 10px;"></i>
+                        <h1 class="count">10</h1>
+                        <h2>-</h2>
+                        <p>FAKULTAS</p>
+                    </div>
+                </div>
+                <div class="col-md-4 d-flex justify-content-center">
+                    <div class="rect">
+                        <i class="fa fa-user-circle" aria-hidden="true"
+                            style="color: #F7EE24; margin-bottom: 10px; margin-top: 10px;"></i>
+                        <h1 class="count">1170</h1>
+                        <h2>-</h2>
+                        <p>DOSEN</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4 d-flex justify-content-center">
+                    <div class="rect">
+                        <i class="fa fa-graduation-cap" aria-hidden="true"
+                            style="color: #F7EE24; margin-bottom: 10px; margin-top: 10px;"></i>
+                        <h1 class="count">35388</h1>
+                        <h2>-</h2>
+                        <p>MAHASISWA</p>
+                    </div>
+                </div>
+                <div class="col-md-4 d-flex justify-content-center">
+                    <div class="rect">
+                        <i class="fa fa-book" aria-hidden="true"
+                            style="color: #F7EE24; margin-bottom: 10px; margin-top: 10px;"></i>
+                        <h1 class="count">109</h1>
+                        <h2>-</h2>
+                        <p>PROGRAM STUDI</p>
+                    </div>
+                </div>
+                <div class="col-md-4 d-flex justify-content-center">
+                    <div class="rect">
+                        <i class="fa fa-users" aria-hidden="true"
+                            style="color: #F7EE24; margin-bottom: 10px; margin-top: 10px;"></i>
+                        <h1 class="count">902</h1>
+                        <h2>-</h2>
+                        <p>TENAGA KEPENDIDIKAN</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Content Section -->
+    <!-- ABOUT -->
+    <section class="about-section">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-6" style="padding: 50px;">
+                    <div class="container-fluid"
+                        style="display: flex; align-items: center; width: 100%; padding: 0; margin: 0;">
+                        <h2 style="font-weight: bold;">TENTANG UNRI</h2>
+                        <div class="side-line"></div>
+                    </div>
+                    <p style="text-align: justify;">Turut mengahasilkan SDM yang unggul di tingkat pendidikan tinggi
+                        sejak
+                        1962 baik di Provinsi Riau
+                        maupun Skala nasional. Meningkatkan dan memperkokoh daya saing SDM melalui tri dharma pergurauan
+                        tinggi: pendidikan & pengajaran, penelitian, dan pengabdian kepada masyarakat. Berkontribusi
+                        dalam
+                        memenuhi kebutuhan teknologi, menciptakan lapangan kerja, pertumbuhan ekonomi regional dan
+                        nasional.
+                        Menyediakan dan mengatur pendanaan bagi penyediaan sarana dan prasarana pendidikan serta
+                        penyelenggaraan pendidikan sesuai dengan standar dengan mutu terbaik.
+                    </p>
+                    <a href="#" class="btn btn-black mt-auto" style="margin: auto;">Selengkapnya</a>
+
+                </div>
+                <div class="col-md-6" style="height: 100%; padding: 50px;">
+                    <img src="asset/foto-ur.jpg" style="width: 100%;">
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- PROGRAM -->
+    <section class="program-section">
+        <div class="container-fluid" style="padding: 50px; width: 100%; background-color: #000;">
+            <div class="container-fluid"
+                style="display: flex; align-items: center; width: 100%; padding: 0; margin: 0;">
+                <h2 class="text-left" style="font-weight: bold; color: #fff; margin-bottom: 10px;">PROGRAM</h2>
+                <div class="side-line"></div>
+            </div>
+            <div class="container-fluid" style="margin-bottom: 10px; margin-top: 0px; padding-top: 0%;">
+                <div class="row d-flex justify-content-center all">
+                    <div class="col-md-6">
+                        <div class="image-with-gradient">
+                            <img src="https://unri.ac.id/wp-content/uploads/2021/06/e2dd9169771765640bf752f0dfa7fdd5.jpg"
+                                alt="gbr" style="width: 100%;">
+                        </div>
+                    </div>
+                    <div class="col-md-6" style="margin-top: 70px;">
+                        <i class="fa fa-quote-left" aria-hidden="true"
+                            style="color: #F7EE24; font-size: 40px; margin-bottom: 8px;"></i>
+                        <blockquote class="blockquote">
+                            <h4 class="mb-0"
+                                style="font-weight: bold; margin-left: 20px; margin-right: 20px; text-align: center; color: #fff;">
+                                UNRI
+                                Memiliki 10 fakultas
+                                yang
+                                menyelenggarakan program sarjana, pascasarjana, profesi, serta diploma.</h4>
+                        </blockquote>
+                        <i class="fa fa-quote-right" aria-hidden="true"
+                            style="color: #F7EE24; font-size: 40px; text-align: right; margin-left: 85%;"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="container"
+                style="padding: 20px; width: 100%; height: 100%; display:flex; justify-content: flex-start;">
+                <div class="row d-flex justify-content-center all">
+                    <div class="col-md-4 mb-4">
+                        <div class="card"
+                            style="background-color: #0C9447; color: #fff; border-radius: 20px; height: 100%;">
+                            <div class="card-body d-flex flex-column justify-content-center">
+                                <i class=" fa fa-mortar-board" aria-hidden="true"
+                                    style="color: #fff; margin-bottom: 10px; margin-top: 10px; font-size: 60px; text-align: center;"></i>
+                                <h3 style="font-weight: bold; text-align: center;">PROGRAM SARJANA</h3>
+                                <p style="text-align: center;">Program sarjana bisa diikuti oleh lulusan SMA/SMK/MA/MAK,
+                                    mempunyai beban studi 144-160 sks dan dapat ditempuh dalam waktu 8-14 semester.</p>
+                                <a href="#" class="btn btn-white mt-auto" style="margin: auto;">Selengkapnya</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-4">
+                        <div class="card"
+                            style="background-color: #F7EE24; color: #000; border-radius: 20px; height: 100%;">
+                            <div class="card-body d-flex flex-column justify-content-center">
+                                <i class=" fa fa-user" aria-hidden="true"
+                                    style="color: #000; margin-bottom: 10px; margin-top: 10px; font-size: 60px; text-align: center;"></i>
+                                <h3 style="font-weight: bold; text-align: center;">PROGRAM PASCASARJANA</h3>
+                                <p style="text-align: center;">UNRI menawarkan program studi lanjutan di tingkat S2 dan
+                                    S3
+                                    yang
+                                    diselenggarakan di fakultas serta sekolah Pascasarjana.</p>
+                                <a href="#" class="btn btn-black mt-auto" style="margin: auto;">Selengkapnya</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-4">
+                        <div class="card"
+                            style="background-color: #0C9447; color: #fff; border-radius: 20px; height: 100%;">
+                            <div class="card-body d-flex flex-column justify-content-center">
+                                <i class=" fa fa-street-view" aria-hidden="true"
+                                    style="color: #fff; margin-bottom: 10px; margin-top: 10px; font-size: 60px; text-align: center;"></i>
+                                <h3 style="font-weight: bold; text-align: center;">PROGRAM PROFESI</h3>
+                                <p style="text-align: center;">Program profesi diperuntukkan sebagai bagi lulusan
+                                    program
+                                    studi
+                                    tertentu sebagai syarat untuk mendapatkan gelar keprofesian.</p>
+                                <a href="#" class="btn btn-white mt-auto" style="margin: auto;">Selengkapnya</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container-fluid">
+                <div class="row"><a href="#" class="btn btn-yellow mt-auto"
+                        style="margin: auto; font-weight: bold; margin-bottom: 20px;">Panduan Pendaftaran Ulang
+                        Mahasiswa
+                        Baru
+                        Jalur SNBT TA 2023/2024</a></div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- BERITA -->
+    <section class="berita-section">
+        <div class="container-fluid" style="padding: 50px; width: 100%;">
+            <div class="container-fluid"
+                style="display: flex; align-items: center; width: 100%; padding: 0; margin: 0;">
+                <h2 class="text-left" style="font-weight: bold;">BERITA TERBARU</h2>
+                <div class="side-line"></div>
+            </div>
+            <div class="row" ma>
+                <div class="col-lg-7">
+                    <!-- Berita Besar -->
+                    <div class="big-news">
+                        <img src="asset/Sejarah-Baru-Bagi-UNRI-8-Mahasiswa-Lolos-Program-Bergengsi-Indonesian-International-Student-Mobility-Awards-IISMA-700x430.gif"
+                            class="img-fluid" alt="Gambar Berita Besar" style="margin-bottom: 10px; width: 100%;">
+                        <p style="font-weight:bold; font-size: smaller; color: #a6a6aa; margin-top: 8px;">MARCH 22,
+                            2024
+                        </p>
+                        <a class="link-black" href="">
+                            <h5 style="font-weight: bold; text-align: justify;">Sejarah Baru Bagi UNRI, 8 Mahasiswa
+                                Lolos
+                                Program Bergengsi Indonesian International Student Mobility Awards (IISMA)</p>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-5">
+                    <!-- Tajuk Berita Kecil -->
+                    <div class="small-news">
+                        <div class="row">
+                            <div class="col-4">
+                                <img src="asset/Berkunjung-ke-UNRI-BI-Riau-Sampaikan-Beasiswa-700x430.gif"
+                                    class="img-fluid" alt="Gambar Berita Kecil 1">
+                            </div>
+                            <div class="col-8">
+                                <p style="font-weight:bold; font-size: small; color: #a6a6aa; margin-top: 8px;">
+                                    MARCH 21,
+                                    2024
+                                </p>
+                                <a class="link-black" href="">
+                                    <h6 style="font-weight: bold; text-align: justify;">Berkunjung ke UNRI, BI Riau
+                                        Sampaikan Beasiswa</h6>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="small-news">
+                        <div class="row">
+                            <div class="col-4">
+                                <img src="asset/UNRI-Jalin-Kerja-Sama-dengan-Kadin-Dumai-700x430.jpg" class="img-fluid"
+                                    alt="Gambar Berita Kecil 2">
+                            </div>
+                            <div class="col-8">
+                                <p style="font-weight:bold; font-size: small; color: #a6a6aa; margin-top: 8px;">
+                                    MARCH 20,
+                                    2024
+                                </p>
+                                <a class="link-black" href="">
+                                    <h6 style="font-weight: bold; text-align: justify;">UNRI Jalin Kerja Sama dengan
+                                        Kadin
+                                        Dumai</h6>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="small-news">
+                        <div class="row">
+                            <div class="col-4">
+                                <img src="asset/Rektor-UNRI-Jadi-Saksi-Pelantikan-PJ-Sekda-Provinsi-Riau-700x430.gif"
+                                    class="img-fluid" alt="Gambar Berita Kecil 2">
+                            </div>
+                            <div class="col-8">
+                                <p style="font-weight:bold; font-size: small; color: #a6a6aa; margin-top: 8px;">
+                                    MARCH 19,
+                                    2024
+                                </p>
+                                <a class="link-black" href="">
+                                    <h6 style="font-weight: bold; text-align: justify;">Rektor UNRI Jadi Saksi
+                                        Pelantikan
+                                        PJ. Sekda Provinsi Riau</h6>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="small-news">
+                        <div class="row">
+                            <div class="col-4">
+                                <img src="asset/Optimalisasi-Program-Kerja-Bidang-Akademis-dan-Kemahasiswaan-Untuk-Akselerasi-Capaian-Kinerja-Tahun-2025-700x430.jpg"
+                                    class="img-fluid" alt="Gambar Berita Kecil 2">
+                            </div>
+                            <div class="col-8">
+                                <p style="font-weight:bold; font-size: small; color: #a6a6aa; margin-top: 8px;">
+                                    MARCH 18,
+                                    2024
+                                </p>
+                                <a class="link-black" href="">
+                                    <h6 style="font-weight: bold; text-align: justify;">Optimalisasi Program Kerja
+                                        Bidang
+                                        Akademis dan Kemahasiswaan Untuk Akselerasi Capaian Kinerja Tahun 2025</h6>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="small-news">
+                        <div class="row">
+                            <div class="col-4">
+                                <img src="asset/INNOVASI-TIM-PROMEEG-UNIVERSITAS-RIAU-RAIH-RUNNER-UP-CARBON-NEUTRAL-SOLUTION-ANUGRAH-INNOVILLAGE-2023-700x430.jpg"
+                                    class="img-fluid" alt="Gambar Berita Kecil 2">
+                            </div>
+                            <div class="col-8">
+                                <p style="font-weight:bold; font-size: small; color: #a6a6aa; margin-top: 8px;">
+                                    MARCH 18,
+                                    2024
+                                </p>
+                                <a class="link-black" href="">
+                                    <h6 style="font-weight: bold; text-align: justify;">Inovasi Tim Promeeg
+                                        Universitas Riau
+                                        Raih Runner Up Carbon Neutral Solution Anugrah Innovilage 2023</h6>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container-fluid">
+                <div class="row"><a href="#" class="btn btn-green mt-auto"
+                        style="margin: auto; font-weight: bold; margin-bottom: 20px;">Berita Sebelumnya</a></div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- PENJELASAN -->
+    <section class="penjelasan-section">
+        <div class="container-fluid penjelasan" style="width: 100%;">
+            <div class="row" style="background-color: #0C9447; color: #fff;">
+                <div class="col-md-6" style="padding: 60px;">
+                    <h2 style="font-weight: bold;">PENELITIAN</h2>
+                    <p style="text-align: justify;">UNRI secara konsisten dan sistematik sejak tahun pendiriannya 1962
+                        berjuang bersama rakyat hingga
+                        akar rumput membangun dan menyejahterakan Indonesia. UNRI terus mendorong peningkatan kuantitas
+                        dan
+                        kualitas pengabdian kepada masyarakat berbasis riset di Indonesia maupun di dunia Internasional
+                        dengan prinsip-prinsip pembangunan berkelanjutan. UNRI secara bertahap membangun kepemimpinan
+                        pengabdian kepada masyarakat di dunia internasional, antara lain untuk mendesiminasikan
+                        nilai-nilai
+                        baik keindonesiaan dan kemanusiaan.</p>
+                    <a href="#" class="btn btn-white mt-auto" style="margin: auto;">Selengkapnya</a>
+                </div>
+                <div class="col-md-6" style="display: flex; flex-wrap: wrap; align-items: center;">
+                    <div class="row" style="flex-grow: 1;">
+                        <img src="asset/penelitian1.jpg"
+                            style="width: 50%; max-width: 100%; min-width: 100px; margin: 20px auto; box-shadow: 20px 20px rgb(0, 0, 0);">
+                    </div>
+                    <div class="row" style="flex-grow: 1; margin-bottom: 20px;">
+                        <img src="asset/penelitian2.jpg"
+                            style="width: 30%; max-width: 100%; min-width: 100px; margin: 20px auto; box-shadow: 20px 20px rgb(0, 0, 0);">
+                    </div>
+                </div>
+
+            </div>
+            <div class="row" style="background-color: #F7EE24; color: #000;">
+                <div class="col-md-6" style="display: flex; align-items: center;">
+                    <img src="asset/pengabdian.jpg"
+                        style="width: 100%; max-width: 500px; min-width: 100px; margin-top: 50px; margin-bottom: 50px;  margin-left: 50px; box-shadow: 20px 20px rgb(0, 0, 0);">
+                </div>
+                <div class="col-md-6" style="padding: 60px;">
+                    <h2 style="font-weight: bold;">PENGABDIAN</h2>
+                    <p style="text-align: justify;">UNRI secara konsisten dan sistematik sejak tahun pendiriannya
+                        1962
+                        berjuang bersama rakyat hingga
+                        akar rumput membangun dan menyejahterakan Indonesia. UNRI terus mendorong peningkatan
+                        kuantitas dan
+                        kualitas pengabdian kepada masyarakat berbasis riset di Indonesia maupun di dunia
+                        Internasional
+                        dengan prinsip-prinsip pembangunan berkelanjutan. UNRI secara bertahap membangun
+                        kepemimpinan
+                        pengabdian kepada masyarakat di dunia internasional, antara lain untuk mendesiminasikan
+                        nilai-nilai
+                        baik keindonesiaan dan kemanusiaan.</p>
+                    <div class="row d-flex align-items-center" style="margin-top: 20px;">
+                        <div class="col-md-6 col-12">
+                            <a href="#" class="btn btn-black mt-md-0">KKN Integritas</a>
+                        </div>
+                        <div class="col-md-6 col-12 mt-md-0 mt-3">
+                            <div class="d-flex justify-content-end align-items-center">
+                                <a class="link-black" href="#">
+                                    <h6 style="font-weight: 500; text-align: right; margin-bottom: 0;">Selengkapnya <i
+                                            class="fa fa-arrow-right" aria-hidden="true"></i></h6>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="row" style="background-color: #0C9447; color: #fff;">
+                <div class="col-md-6" style="padding: 60px;">
+                    <h2 style="font-weight: bold;">KEMAHASISWAAN</h2>
+                    <p style="text-align: justify;">Mencetak mahasiswa berwawasan global dan berintegritas yang
+                        dilandasi
+                        nilai-nilai Pancasila.</p>
+                    <a href="#" class="btn btn-white mt-auto" style="margin: auto;">Selengkapnya</a>
+                </div>
+                <div class="col-md-6" style="display: flex; align-items: center; padding-right: 50px;">
+                    <img src="asset/nari.jpeg"
+                        style="width: 100%; max-width: 500px; min-width: 100px; margin-top: 50px; margin-left: 50px; margin-bottom: 50px; box-shadow: 20px 20px rgb(0, 0, 0);">
+                </div>
+            </div>
+            <div class="row" style="background-color: #F7EE24; color: #000; height: 100%;">
+                <div class="col-md-6" style="display: flex; align-items: center; ">
+                    <img src="asset/alumni.jpg"
+                        style="width: 100%; max-width: 500px; min-width: 100px;  margin-top: 50px; margin-left: 50px; margin-bottom: 50px; box-shadow: 20px 20px rgb(0, 0, 0);">
+                </div>
+                <div class="col-md-6" style="padding: 60px;">
+                    <h2 style="font-weight: bold;">ALUMNI</h2>
+                    <p style="text-align: justify;">Alumni UNRI tersebar di berbagai wilayah, berkiprah di tingkat
+                        nasional
+                        dan global.</p>
+                    <a href="#" class="btn btn-black mt-auto" style="margin: auto;">Selengkapnya</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- PENGUMUMAN -->
+    <section class="pengumuman-section">
+        <div class="container-fluid" style="padding: 50px; width: 100%;">
+            <div class="container-fluid"
+                style="display: flex; align-items: center; width: 100%; padding: 0; margin: 0;">
+                <h2 class="text-left" style="font-weight: bold;">PENGUMUMAN</h2>
+                <div class="side-line"></div>
+            </div>
+            <div class="row">
+                <div class="col-md-4" style="padding: 20px;">
+                    <p style="font-weight:bold; font-size: small; color: #a6a6aa; margin-top: 8px;">JANUARY 31, 2024
+                    </p>
+                    <a class="link-black" href="">
+                        <h6 style="font-weight: bold; text-align: justify;">Hasil Evaluasi Daya Tampung Program Studi
+                            Yang
+                            Terdeteksi Kenaikan Anomali
+                        </h6>
+                </div>
+                <div class="col-md-4" style="padding: 20px;">
+                    <p style="font-weight:bold; font-size: small; color: #a6a6aa; margin-top: 8px;">JANUARY 3, 2024
+                    </p>
+                    <a class="link-black" href="">
+                        <h6 style="font-weight: bold; text-align: justify;">Pembayaran UKT/SPP Semester Genap tahun
+                            Akademik
+                            2024/2024
+                        </h6>
+                </div>
+                <div class="col-md-4" style="padding: 20px;">
+                    <p style="font-weight:bold; font-size: small; color: #a6a6aa; margin-top: 8px;">DECEMBER 28, 2023
+                    </p>
+                    <a class="link-black" href="">
+                        <h6 style="font-weight: bold; text-align: justify;">Pengajuan Revisi UKT Mahasiswa Angkatan 2023
+                            Pemegang KIP Kuliah yang Tidak Termasuk Penerima Beasiswa KIP Kuliah
+                        </h6>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4" style="padding: 20px;">
+                    <p style="font-weight:bold; font-size: small; color: #a6a6aa; margin-top: 8px;">DECEMBER 24, 2023
+                    </p>
+                    <a class="link-black" href="">
+                        <h6 style="font-weight: bold; text-align: justify;">Hasil Akhir Seleksi (Kelulusan) PPPK
+                            Kebutuhan
+                            Tenaga Teknis dan Tenaga Kesehatan Kemdikbudristek TA 2023</h6>
+                </div>
+                <div class="col-md-4" style="padding: 20px;">
+                    <p style="font-weight:bold; font-size: small; color: #a6a6aa; margin-top: 8px;">NOVEMBER 24, 2023
+                    </p>
+                    <a class="link-black" href="">
+                        <h6 style="font-weight: bold; text-align: justify;">Hasil SKD CPNS Kemdikbudristek TA 2023
+                        </h6>
+                </div>
+                <div class="col-md-4" style="padding: 20px;">
+                    <p style="font-weight:bold; font-size: small; color: #a6a6aa; margin-top: 8px;">OCTOBER 12, 2023
+                    </p>
+                    <a class="link-black" href="">
+                        <h6 style="font-weight: bold; text-align: justify;">Pengajuan Revisi UKT Semester Genap Tahun
+                            2023/2024</h6>
+                </div>
+                <div class="container-fluid">
+                    <div class="row"><a href="#" class="btn btn-green mt-auto"
+                            style="margin: auto; font-weight: bold; margin-bottom: 20px;">Pengumuman Sebelumnya</a>
+                    </div>
+                </div>
+            </div>
+    </section>
+
+
+    <!-- SLIDER INFORMASI -->
+    <section class="info-section">
+        <div class="container-fluid" style="padding: 50px; width: 100%; background-color: #e4e4e7;">
+            <div class="container-fluid"
+                style="display: flex; align-items: center; width: 100%; padding: 0; margin: 0;">
+                <h2 class="text-left" style="font-weight: bold;">INFORMASI</h2>
+                <div class="side-line"></div>
+            </div>
+            <div class="card__container swiper">
+                <div class="card__content">
+                    <div class="swiper-wrapper">
+                        <article class="card__article swiper-slide">
+                            <div class="card__image">
+                                <img src="asset/SELAMAT-600x384.png" alt="" class="card__img">
+                            </div>
+                            <div class="card__data">
+                                <h3 class="card__name">PPID</h3>
+                                <p class="card__description">Pejabat Pengelola Informasi dan Dokumentasi Universitas
+                                    Riau
+                                </p>
+                                <a href="#" class="card__button">View</a>
+                            </div>
+                        </article>
+
+                        <article class="card__article swiper-slide">
+                            <div class="card__image">
+                                <img src="asset/SELAMAT-1-600x384.png" alt="" class="card__img">
+
+                            </div>
+                            <div class="card__data">
+                                <h3 class="card__name">Lapor!</h3>
+                                <p class="card__description">Layanan aspirasi dan pengaduan online</p>
+                                <a href="#" class="card__button">View</a>
+                            </div>
+                        </article>
+
+                        <article class="card__article swiper-slide">
+                            <div class="card__image">
+                                <img src="asset/SELAMAT-3-600x384.png" alt="" class="card__img">
+                            </div>
+                            <div class="card__data">
+                                <h3 class="card__name">Whistle Blowing System</h3>
+                                <p class="card__description">WBS Kemendikbudristek</p>
+                                <a href="#" class="card__button">View</a>
+                            </div>
+                        </article>
+
+                        <article class="card__article swiper-slide">
+                            <div class="card__image">
+                                <img src="asset/SELAMAT-2-600x385.png" alt="" class="card__img">
+
+                            </div>
+                            <div class="card__data">
+                                <h3 class="card__name">Cek Fakta</h3>
+                                <p class="card__description">Usut fakta</p>
+                                <a href="#" class="card__button">View</a>
+                            </div>
+                        </article>
+
+                        <article class="card__article swiper-slide">
+                            <div class="card__image">
+                                <img src="asset/WhatsApp-Image-2023-11-24-at-135337-600x502.jpeg" alt=""
+                                    class="card__img">
+                            </div>
+                            <div class="card__data">
+                                <h3 class="card__name">Satgas PPKS UNRI</h3>
+                                <p class="card__description">Laporkan Kekerasan Seksual</p>
+                                <a href="#" class="card__button">View</a>
+                            </div>
+                        </article>
+
+                    </div>
+                </div>
+
+                <div class="swiper-button-prev">
+                    <i class="ri-arrow-left-s-line"></i>
+                </div>
+                <div class="swiper-button-next">
+                    <i class="ri-arrow-right-s-line"></i>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- footer top -->
+    <section class="ft-section">
+        <div class=" container-fluid" style="background-color: #000; color: #fff; padding: 50px; width: 100%;">
+            <div class="row">
+                <div class="col-md-4" style="margin-bottom: 10px; margin-top: 10px; ">
+                    <img src="asset/logo-unri21-Blu-1.png"
+                        style="height: auto; min-height: 20px; max-width: 100%; margin-bottom: 10px; border-bottom: 2px solid #F7EE24; padding-bottom: 10px;">
+                    <h6>Kampus Bina Widya KM. 12,5, Simpang Baru, Kec. Tampan, Kota Pekanbaru, Riau 28293</h6><br>
+                </div>
+                <div class="col-md-4" style="margin-bottom: 20px; margin-top: 20px;">
+                    <h5 style="font-weight: bold; border-bottom: solid 2px #F7EE24; padding-bottom: 2px;">Kontak</h5>
+                    <p>(0761) 63266</p>
+                    <p>rektor@unri.ac.id</p>
+                </div>
+                <div class="col-md-4" style="margin-bottom: 20px; margin-top: 20px;">
+                    <h5 style="font-weight: bold; border-bottom: solid 2px #F7EE24; padding-bottom: 2px;">Peta</h5>
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d31917.443247208037!2d101.380647!3d0.476395!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31d5aea1f427ab57%3A0x74d49c35acbd10e1!2sUniversity%20of%20Riau!5e0!3m2!1sen!2sus!4v1711118462946!5m2!1sen!2sus"
+                        width="450" height="250" style="border:0; min-width: 200px; width: 100%;" allowfullscreen=""
+                        loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Footer bottom-->
+    <section class="fb-section">
+        <footer class="footer mt-auto bg-dark text-white">
+            <div class="container-fluid text-center">
+                <span style="font-weight: 200;color: #b5b5bb; height: 100%; display: block; padding: 15px;">Copyright ©
+                    Kelompok 11. All
+                    rights reserved.</span>
+            </div>
+        </footer>
+    </section>
+
+
+    <!-- SCRIPT -->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <script>
+        let nCount = selector => {
+            $(selector).each(function () {
+                $(this)
+                    .prop('Counter', 0)
+                    .animate({
+                        Counter: $(this).text()
+                    }, {
+                        duration: 4000,
+                        easing: "swing",
+                        step: function (value) {
+                            $(this).text(Math.ceil(value));
+                        }
+                    });
+            });
+        };
+
+        $(document).ready(function () {
+            nCount('.count');
+        });
+    </script>
+    <script>
+        let swiperCards = new Swiper('.card__content', {
+            loop: true,
+            spaceBetween: 32,
+            grabCursor: true,
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+                dynamicBullets: true,
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+
+            breakpoints: {
+                600: {
+                    slidesPerView: 2,
+                },
+                968: {
+                    slidesPerView: 3,
+                },
+            },
+        });
+    </script>
+    <script>
+        var TrandingSlider = new Swiper('.tranding-slider', {
+            effect: 'coverflow',
+            grabCursor: true,
+            centeredSlides: true,
+            loop: true,
+            slidesPerView: 'auto',
+            coverflowEffect: {
+                rotate: 0,
+                stretch: 0,
+                depth: 100,
+                modifier: 2.5,
+            },
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            }
+        });
+    </script>
+    <script>document.addEventListener("DOMContentLoaded", function () {
+            var dropdownToggle = document.getElementById("navbarDropdownMenuLink");
+            var dropdownMenu = document.getElementById("organisasiDropdown");
+
+            dropdownToggle.addEventListener("click", function (event) {
+                if (dropdownMenu.style.display === "block") {
+                    dropdownMenu.style.display = "none";
+                } else {
+                    dropdownMenu.style.display = "block";
+                }
+                event.stopPropagation();
+            });
+            document.addEventListener("click", function (event) {
+                var isClickInside = dropdownToggle.contains(event.target) || dropdownMenu.contains(event.target);
+                if (!isClickInside) {
+                    dropdownMenu.style.display = "none";
+                }
+            });
+        });
+    </script>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            ScrollReveal().reveal('.counterur-section', { delay: 300, origin: 'top', distance: '50px' });
+            ScrollReveal().reveal('.about-section', { delay: 300, origin: 'left', distance: '50px' });
+            ScrollReveal().reveal('.program-section', { delay: 300, origin: 'bottom', distance: '50px' });
+            ScrollReveal().reveal('.berita-section', { delay: 300, origin: 'left', distance: '70px' });
+            ScrollReveal().reveal('.penjelasan-section', { delay: 300, origin: 'top', distance: '50px' });
+            ScrollReveal().reveal('.pengumuman-section', { delay: 300, origin: 'left', distance: '50px' });
+            ScrollReveal().reveal('.info-section', { delay: 300, origin: 'bottom', distance: '50px' });
+            ScrollReveal().reveal('.ft-section', { delay: 300, origin: 'left', distance: '50px' });
+        });
+    </script>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"></script>
+    <script src="asset/swiper-bundle.min.js"></script>
+
+</body>
+
+</html>
